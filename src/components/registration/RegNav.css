@@ -1,0 +1,48 @@
+.regNav{
+    width:100%;
+    height:17.3%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.regNavBtn{
+    width:32.1%;
+    height: 27.3%;
+    background: #ffffff;
+    border: 2px solid #69BF45;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 150%;
+    cursor: pointer;
+    text-align: center;
+    color: #69BF45;
+}
+.regNavBtnClick{
+    width:32.1%;
+    height: 27.3%;
+    background: #398EB1;
+    border: 1px solid #398EB1;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 150%;
+    cursor: pointer;
+    text-align: center;
+    color: #FFFFFF;
+}
+/* .regNav button:hover {
+    background: #398EB1;
+    color: #FFFFFF;
+    border: 1px solid #398EB1;
+}
+.regNav button:active {
+    background: #398EB1;
+    color: #FFFFFF;
+    border: 1px solid #398EB1;
+} */

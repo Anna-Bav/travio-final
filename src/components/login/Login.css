@@ -1,0 +1,301 @@
+/* .login,
+.login_inner,
+.login_inner1,
+.login_inner2,
+.login_travio {
+  border: 1px solid blue;
+} */
+.login {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  height: 846px;
+  background: linear-gradient(81.3deg, #b3d946 5.44%, #737dd4 98.03%);
+  box-sizing: border-box;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("../../../public/images/background.svg"); */
+}
+.login_inner {
+  width: 27.1%;
+  height: 76.4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.login_inner1 {
+  width: 100%;
+  height: 61.6%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+}
+.login_title {
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 31px;
+  font-style: normal;
+  line-height: 36.39px;
+  margin-top: 3.7%;
+}
+.mail_adress {
+  color: #a8a8a8;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 14.09px;
+  /* display: flex;
+  justify-content: start;
+  align-items: start; */
+}
+.input_mail,
+.input_password {
+  width: 88.5%;
+  border: none;
+  border-bottom: 1px solid #a8a8a8;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 17.61px;
+}
+.input_mail:focus,
+.input_password:focus {
+  outline: 0;
+  outline-offset: 0;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 17.61px;
+  border-bottom: 2px solid #398eb1;
+}
+.rememberMe {
+  width: 88.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remember {
+  /* width:50%; */
+  color: #a8a8a8;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 17.61px;
+}
+/* .check{
+  
+} */
+.forget {
+  /* width:50%; */
+  color: #398eb1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 17.61px;
+}
+.login_btn {
+  width: 20.2%;
+  height: 10.1%;
+  background-color: #398eb1;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 18px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 3.7%;
+}
+.login_inner2 {
+  width: 100%;
+  height: 33.7%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+}
+.reg_text {
+  width: 89.5%;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 31px;
+  font-style: normal;
+  line-height: 37px;
+  text-align: center;
+}
+.reg_button {
+  width: 46.7%;
+  height: 24.8%;
+  border-radius: 5px;
+  background-color: #69bf45;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 21.6px;
+  border: none;
+  cursor: pointer;
+}
+/* .logo {
+  width: 100%;
+  margin-top: 2.57%;
+  margin-left: 9.38%;
+  display: flex;
+  justify-content: start;
+} */
+/* .backGround {
+  width: 100%;
+  max-height: 564.04px;
+  background-image: url("../../../public/images/background.svg");
+  background-image: url("../MainPage/mainLines.svg");
+  margin-top: 7.14%;
+} */
+/* .login_travio {
+  width: 39.6%;
+  height: 50%;
+  margin-top: 1%;
+  background-color: #ffffff;
+  border: 1px solid #0c3122;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login_text {
+  margin-top: 38px;
+  margin-bottom: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32.68px;
+  color: #0c3122;
+}
+.input_mail,
+.input_password {
+  margin-top: 21px;
+  width: 64.9%;
+  height: 12.9%;
+  border: 1px solid #0c3122;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #b2b2b2;
+  padding-left: 17px;
+}
+.rememberMe {
+  width: 64.9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16.34px;
+}
+.login_btn {
+  width: 35.1%;
+  height: 11.64%;
+  margin-top: 19px;
+  background-color: #b2b2b2;
+  color: #ffffff;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21.9px;
+  border: none;
+  border-radius: 105.88px;
+  cursor: pointer;
+}
+.reg_travio {
+  width: 39.6%;
+  height: 26.9%;
+  border: 1px solid #0c3122;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin-top: 14px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reg_text {
+  width: 73%;
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 32.68px;
+  color: #0c3122;
+  padding-top: 24px;
+} */
+/* .reg_btn {
+  margin-top: 17px;
+  width: 43.9%;
+  height: 26.6%;
+  color: #feffe0;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #52744d;
+  border: none;
+  border-radius: 107.31px;
+  cursor: pointer;
+} */
+@media (max-width: 1440px) {
+
+  .login_inner1 {
+    height: 58.6%;
+  }
+  .login_title {
+    font-size: 29px;
+  }
+  .remember, .forget {
+    font-size: 14px;
+  }
+  .login_btn {
+    font-size: 14px;
+  }
+  .reg_text {
+    font-size: 23px;
+   
+  }
+  .reg_button {
+    font-size: 16px;
+    
+  }
+ 
+}

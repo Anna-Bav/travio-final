@@ -1,0 +1,155 @@
+/* .work,
+.work_inner1,
+.work_inner2,
+.simply,
+.work_img {
+  border: 1px solid blue;
+} */
+
+.work {
+  width: 100%;
+  height: 9.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #69bf45;
+}
+.work_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work_inner1 {
+  width: 100%;
+  height: 17.3%;
+  display: flex;
+  align-items: start;
+  color: #69bf45;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 41px;
+  font-style: normal;
+  line-height: 49.2px;
+  border-bottom: 2px solid #69bf45;
+}
+.work_inner1_inn {
+  width: 67.2%;
+  margin-left: 16.4%;
+}
+.work_inner2 {
+  width: 67.2%;
+  height: 82.7%;
+  display: flex;
+}
+.simply {
+  width: 42.6%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+.simply_btns {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+}
+.simply_btn1 {
+  width: 32.2%;
+  height: 100%;
+  margin-right: 3.6%;
+}
+.simply_btn2 {
+  width: 16.7%;
+  height: 100%;
+  margin-right: 3.6%;
+}
+.simply_btn3 {
+  width: 33.6%;
+  height: 100%;
+}
+.simply_btn1,
+.simply_btn2,
+.simply_btn3 {
+  color: #69bf45;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 18px;
+  background-color: transparent;
+  border: 2px solid #69bf45;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.simply_btn1:hover,
+.simply_btn2:hover,
+.simply_btn3:hover {
+  background-color: #69bf45;
+  color: #ffffff;
+}
+.this_simply {
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 57px;
+  font-style: normal;
+  line-height: 67px;
+}
+.simply_text {
+  width: 69.5%;
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 27px;
+}
+.simply_join {
+  width: 38%;
+  height: 9%;
+  color: #398eb1;
+  background-color: transparent;
+  border: 2px solid #398eb1;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+  cursor: pointer;
+}
+.simply_join:hover {
+  color: #ffffff;
+  background-color: #398eb1;
+  border: none;
+}
+.work_img {
+  width: 57.4%;
+  display: flex;
+  align-items: center;
+}
+.work_img img {
+  width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .simply_btn1,
+  .simply_btn2,
+  .simply_btn3 {
+    font-size: 11px;
+}
+.this_simply {
+  font-size: 54px;
+  
+}
+.simply_text {
+  font-size: 16px;
+  
+}
+.simply_join {
+  font-size: 16px;
+}
+}
