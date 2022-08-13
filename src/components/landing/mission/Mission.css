@@ -1,74 +1,74 @@
 /* .mission,
-.mission_1, .mission_1_inner,
+.mission_inner,
 .mission_2 {
   border: 1px solid blue;
 } */
 .mission {
   width: 100%;
-  height: 5.5%;
+  height: 8.96%;
   display: flex;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F3FE;
 }
-.mission_1 {
+/* .mission_1 {
   width: 51.1%;
   height: 100%;
   display: flex;
   align-items: center;
   background: linear-gradient(79.24deg, #9FC72C 0%, #22B465 29.82%, #4083C8 62.92%);
   
-}
-.mission_1_inner{
-  width:53.4%;
-  height:70.7%;
+} */
+.mission_inner{
+  width:62.7%;
+  height:46.5%;
   display:flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  margin-left: 32.1%;
 }
 .our_mission{
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
+  color: #212121;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
-  font-size: 41px;
-  font-style: normal;
-  line-height: 49.2px;
+  font-size: 48px;
+  line-height: 57.6px;
 }
 .mission_text{
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  width: 41.7%;
+  color: #212121;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  line-height: 27px;
+  line-height: 25.2px;
 }
 .mission_btn{
-  width:40.1%;
-  height: 20%;
+  width:18.4%;
+  height: 23.0%;
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 22px;
-  border-radius: 5px;
-  background-color: transparent;
-  border: 1px solid #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 4px;
+  background-color: #605DEC;
+  border: 1px solid #605DEC;
   cursor: pointer;
 }
-.mission_btn:hover {
+/* .mission_btn:hover {
   background-color: #398eb1;
   color: #ffffff;
   border: 2px solid #398eb1;
-}
-.mission_2 {
+} */
+/* .mission_2 {
   width: 48.9%;
   height: 100%;
 }
 .mission_2 img{
   width: 100%;
   height: 100%;
-}
+} */
 @media (max-width: 1440px) {
   .our_mission{
    font-size: 40px;

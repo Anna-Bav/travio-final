@@ -17,8 +17,8 @@ export default function Landing() {
          <Header />
         <Main />
         <Work />
-        <Stimul />
         <Mission />
+        <Stimul />
         <Partners />
         <News />
         <Footer />
