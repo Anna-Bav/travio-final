@@ -15,10 +15,10 @@ export default function Partners() {
                  <img src='/images/partners_img.svg'/>
                  <img src='/images/partners_img.svg'/>
                  <img src='/images/partners_img.svg'/>
-                 <img src='/images/partners_img.svg'/>
+                 {/* <img src='/images/partners_img.svg'/> */}
                  </div>
 
-                 <div><img src='/images/points.svg'/></div>
+                 {/* <div><img src='/images/points.svg'/></div> */}
              </div>
 
             

@@ -9,20 +9,16 @@
 } */
 .footer {
   width: 100%;
-  height: 7.3%;
-  background: linear-gradient(
-    81.05deg,
-    #9fc72c 0%,
-    #22b465 47.4%,
-    #4083c8 100%
-  );
+  height:6.4%;
+  background: #605DEC;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-top: 2.2%; */
 }
 .footer_inner {
-  width: 67.2%;
-  height: 75.8%;
+  width: 62.4%;
+  height: 73.8%;
   display: flex;
   justify-content: space-between;
 }
@@ -43,7 +39,7 @@
 }
 .aboutUs1 {
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -51,11 +47,11 @@
 }
 .aboutUs2 {
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: 27px;
+  line-height: 25.2px;
 }
 .help {
   width: 31%;
@@ -79,7 +75,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .footer_inner2 img{
   width:100%;
@@ -87,7 +83,7 @@
 .rights {
   /* width: 85.5%; */
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;

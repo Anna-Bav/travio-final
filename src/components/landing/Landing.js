@@ -19,8 +19,8 @@ export default function Landing() {
         <Work />
         <Mission />
         <Stimul />
-        <Partners />
         <News />
+        <Partners />
         <Footer />
      </div>
      )

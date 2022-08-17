@@ -11,14 +11,7 @@ export default function Footer() {
 
                 <div className='footer_inner1'>
 
-                    <div className='aboutUs'>
-                        <div className='aboutUs1'>О нас</div>
-                        <div className='aboutUs2'>О Travio</div>
-                        <div className='aboutUs2'>Контакты</div>
-                        <div className='aboutUs2'>Обратная связь</div>
-                    </div>
-
-                    <div className='help'>
+                <div className='help'>
                         <div className='aboutUs1'>Помощь</div>
                         <div className='aboutUs2'>Правила использования сайта</div>
                         <div className='aboutUs2'>Частые вопросы</div>
@@ -36,11 +29,22 @@ export default function Footer() {
                         <div className='aboutUs2'>Документ</div>
                     </div>
 
+                    <div className='aboutUs'>
+                        <div className='aboutUs1'>О нас</div>
+                        <div className='aboutUs2'>О Travio</div>
+                        <div className='aboutUs2'>Контакты</div>
+                        <div className='aboutUs2'>Обратная связь</div>
+                    </div>
+
+                    
+
+                    
+
                 </div>
 
                 <div className='footer_inner2'>
                 <img src='/images/footer_logo.svg'/>
-                <div className='rights'>© 2021 Trav.io <div>Все права защищены.</div></div>
+                <div className='rights'>© 2022 Trav.io <div>Все права защищены.</div></div>
                 <div className='socials'><img src='/images/footer_telegram.svg'/><img src='/images/footer_instagram.svg'/></div>
                 </div>
 
