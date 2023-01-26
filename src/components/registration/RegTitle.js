@@ -8,7 +8,7 @@ export default function RegTitle(){
     return(
 
  <div className='regTitle'>
-    Регистрация нового пользователя
+    Регистрация
 </div>
     )
 }

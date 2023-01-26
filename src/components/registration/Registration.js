@@ -11,12 +11,13 @@ import Sphere from './Sphere';
 
 
 
-export default function Registration()  {
+export default function Registration(props)  {
     const [step, setStep] = useState('1')
     
    
     
     const Step1 = () => {
+        const {popup ,setPopup ,  setPopupReg,popupReg} = props
         const [email, setEmail] = useState()
         const [password, setPassword] = useState()
         const [confirmPassword, setConfirmPassword] = useState("")
@@ -45,6 +46,11 @@ export default function Registration()  {
         const [passwordConfirm, setPasswordConfirm] = useState();
 
 
+        function toggleReg(){
+            setPopupReg(!popupReg)
+            setPopup(!popup)
+        }
+    
 
     useEffect( () => {
         if (emailError || passwordError) {
@@ -194,17 +200,28 @@ export default function Registration()  {
      
         return (
             <div className='registration'>
-                <div className='registration_inner'>
 
-                <div className='reg_inner1'>
-              Регистрация нового пользователя
-              </div>    
+                
+            <div className='login_close' onClick={() => setPopupReg(!popupReg)}>
+            <img src='/images/close.svg'/>
+            </div>
 
-            <div className='reg_inner2'>
-              <div className='mail_adress'>Адрес электронной почты</div>
+
+            <div className='registration_inner'>
+
+                {/* <div className='registration_innerUp'> */}
+
+
+
+
+                <div className='login_title'>Регистрация</div>    
+
+           
+              {/* <div className='mail_adress'>Адрес электронной почты</div> */}
               
               <input 
                type='email' 
+               placeholder='Адрес электронной почты'
                onChange = {emailHandler} 
                value={email}
                onBlur = {blurHandler} 
@@ -212,10 +229,11 @@ export default function Registration()  {
                name='email' />
               {(emailDirty && emailError) && <div style={{color:'#EF3125', fontSize:'10px'}}>{emailError}</div>}
              
-              <div className='mail_adress'>Пароль</div>
+              {/* <div className='mail_adress'>Пароль</div> */}
              
               <input
                type='password'
+               placeholder='Пароль'
                onChange = {e => passwordHandler(e)}
                value={password} 
                onBlur = {e => blurHandler(e)} 
@@ -224,10 +242,11 @@ export default function Registration()  {
               {(passwordDirty) && <div style={{color:'#EF3125', fontSize:'10px'}}>{passwordError}</div>}
               
 
-              <div className='mail_adress'>Подтвердить пароль</div>
+              {/* <div className='mail_adress'>Подтвердить пароль</div> */}
              
               <input 
                type='password'
+               placeholder='Повторите пароль'
                onChange = {e => passwordConfirmation(e)}  
                onBlur = {e => blurHandler(e)} 
                value={confPassword}                          
@@ -238,7 +257,7 @@ export default function Registration()  {
               
 
               <div className='pass_must'>
-                  <div className='must_title'>Пароль должен:</div>
+                  <div className='must_title'>Пароль должен содержать:</div>
                   
                   {/* <div >
                       <div className='visualBtn' 
@@ -252,7 +271,29 @@ export default function Registration()  {
                   <path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z"/>
                   </svg>
                   </div >содержать не менее 8 и не более 14 символов;</div> */}
-                  <div className='must_text' style={{color:colorType}}>
+
+                  <div className='must_main'>
+
+                  <div className='must_main1'>
+                    <div className='must_text'>
+                    <img src='/images/ellipse.svg'/>
+                    Минимум 6-32 символов</div>
+                    <div className='must_text'>
+                    <img src='/images/ellipse.svg'/>
+                    Одна цифра</div>
+                  </div>
+
+                  <div className='must_main2'>
+                  <div className='must_text'>
+                  <img src='/images/ellipse.svg'/>
+                  Одна строчная буква</div>
+                  <div className='must_text'>
+                  <img src='/images/ellipse.svg'/>
+                  Одна заглавная буква</div>
+                  </div>
+
+
+                  {/* <div className='must_text' style={{color:colorType}}>
                       <div style={{width: "10px", 
                                    height: "10px", 
                                    borderColor: colorCircle1,
@@ -261,9 +302,9 @@ export default function Registration()  {
                                    borderRadius: "50%"}}>
                         </div>
                         содержать не менее 8 и не более 14 символов;
-                    </div>
+                    </div> */}
 
-                  <div className='must_text' style={{color:colorLatin}}>
+                  {/* <div className='must_text' style={{color:colorLatin}}>
                   <div style={{width: "10px", 
                                    height: "10px", 
                                    borderColor: colorCircle2,
@@ -272,9 +313,9 @@ export default function Registration()  {
                                    borderRadius: "50%"}}>
                         </div>
                       состоять из букв латинского алфавита (aA-zZ);
-                    </div>
+                    </div> */}
 
-                  <div className='must_text' style={{color:colorNumber}}>
+                  {/* <div className='must_text' style={{color:colorNumber}}>
                   <div style={{width: "10px", 
                                    height: "10px", 
                                    borderColor: colorCircle3,
@@ -283,9 +324,9 @@ export default function Registration()  {
                                    borderRadius: "50%"}}>
                         </div>
                       содержать не менее одной арабской цифры (0-9);
-                    </div>
+                    </div> */}
 
-                  <div className='must_text' style={{color:colorSpecial}}>
+                  {/* <div className='must_text' style={{color:colorSpecial}}>
                   <div style={{width: "10px", 
                                    height: "10px", 
                                    borderColor: colorCircle4,
@@ -294,9 +335,9 @@ export default function Registration()  {
                                    borderRadius: "50%"}}>
                         </div>
                       содержать один из спецсимволов [!] [@] [#] [$] [%] [^] [&] [*];
-                      </div>
+                      </div> */}
 
-                  <div className='must_text' style={{color:colorLower}}>
+                  {/* <div className='must_text' style={{color:colorLower}}>
                   <div style={{width: "10px", 
                                    height: "10px", 
                                    borderColor: colorCircle5,
@@ -305,9 +346,9 @@ export default function Registration()  {
                                    borderRadius: "50%"}}>
                         </div>
                       не менее одной латинской буквы в нижнем регистре;
-                    </div>
+                    </div> */}
 
-                  <div className='must_text' style={{color:colorUpper}}>
+                  {/* <div className='must_text' style={{color:colorUpper}}>
                   <div style={{width: "10px", 
                                    height: "10px", 
                                    borderColor: colorCircle6,
@@ -316,38 +357,47 @@ export default function Registration()  {
                                    borderRadius: "50%"}}>
                         </div>
                       не менее одной латинской буквы в верхнем регистре.
-                    </div>
+                    </div> */}
+
+
+                </div>
 
               </div>
               
               <div className='rules'>
-                  <div>Продолжая, я подтверждаю, что я ознакомился с </div>
-                  <div><a href='#'>Правилами пользования сервисом</a>, <a href='#'>Политикой конфидитенциальности</a></div>
+                  <div>Нажимая продолжить, я подтверждаю, что я ознакомился(ась) с:</div>
+                  <div><a href='#'>Правилами пользования сервисом</a>, <a href='#'>Политикой конфиденциальности</a></div>
               </div>
               
               {/* <button disabled={!formValid} onClick={() => registration(email,password)} className='registr_btn'>Продолжить</button> */}
              <ButtonVar step={step}/>
-              </div>
+            
 
             </div>
-          
+          {/* </div> */}
        </div>
     )                                                       
 }
 
 const Step2 = () => {
+    const {popup ,setPopup ,  setPopupReg,popupReg} = props
     const [sphere, setSphere] = useState(true)
     const [requisites, setRequisites] = useState(false)
     const [contacts, setContacts] = useState(false)
  
     return (
-        <div  className='registration'>
+        <div  className='registration2'>
+
+
+            <div className='login_close' onClick={() => setPopupReg(!popupReg)}>
+            <img src='/images/close.svg'/>
+            </div>
 
 
 
 
-            <div className='registration_inner2'>
-                <div className='registration_inner2_inner'>
+            {/* <div className='registration_inner2'> */}
+                <div className='registration_inner2'>
                     <RegTitle />
                     {/* <div>Регистрация нового пользователя</div> */}
 
@@ -373,7 +423,7 @@ const Step2 = () => {
             <ButtonVar step={step}/>
 
                 </div>
-            </div>
+            {/* </div> */}
         </div>
     )
 }
@@ -421,6 +471,7 @@ function StepperReg(props) {
                     pathname: "/",
 
                 }}
+                // <Redirect to="signUp"/>;
             />
             break
     }

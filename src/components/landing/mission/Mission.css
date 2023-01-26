@@ -56,6 +56,9 @@
   border: 1px solid #605DEC;
   cursor: pointer;
 }
+.mission_btn:hover {
+  background-color: #3D3ACE;
+}
 /* .mission_btn:hover {
   background-color: #398eb1;
   color: #ffffff;

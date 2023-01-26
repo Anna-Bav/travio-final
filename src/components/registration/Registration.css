@@ -8,25 +8,38 @@
 } */
 .registration {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  height: 846px;
-  background: linear-gradient(81.3deg, #b3d946 5.44%, #737dd4 98.03%);
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.registration_inner {
-  width: 27.1%;
-  height: 83.3%;
-  background-color: #ffffff;
-  border-radius: 20px;
+  /* width: 100%; */
+  width: 792px;
+  height: 676px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 170px;
+  /* background: linear-gradient(81.3deg, #b3d946 5.44%, #737dd4 98.03%); */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 29.4%;
+  z-index: 1000;
 }
-.reg_inner1 {
+.registration_inner {
+  width: 85.9%;
+  height: 83.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+/* .registration_innerUp{
+width:100%;
+height: 82.9%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: start;
+} */
+/* .reg_inner1 {
   width: 68%;
   height: 10.5%;
   color: #333333;
@@ -38,7 +51,7 @@
   text-align: center;
   margin-top: 5.7%;
   margin-bottom: 5.7%;
-}
+} */
 .reg_inner2 {
   width: 88.5%;
   height: 72.8%;
@@ -50,87 +63,119 @@
 .reg_mail,
 .reg_password {
   width: 100%;
+  height: 10.0%;
   border: none;
-  border-bottom: 1px solid #a8a8a8;
-  color: #333333;
-  font-family: "Raleway", sans-serif;
+  border-radius: 4px;
+  padding-left: 2.9%;
+  /* border-bottom: 1px solid #a8a8a8; */
+  color: #8A8894;
+  background-color: #F7F7FD;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  font-style: normal;
-  line-height: 17.61px;
+  font-size: 16px;
+  /* font-style: normal; */
+  line-height: 24px;
 }
 .pass_must {
   width: 100%;
-  height: 30.7%;
+  height: 13.9%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
 }
 .must_title {
-  color: #333333;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  font-style: normal;
-  line-height: 14.09px;
+  width: 100%;
+  height: 28.2%;
+  color: #212121;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* font-style: normal; */
+  line-height: 22.4px;
 }
-.must_text {
-  color: #333333;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  font-style: normal;
-  line-height: 14.09px;
+.must_main{
+  width: 100%;
+  height: 56.4%;
   display: flex;
+
+}
+.must_main1{
+width: 29.1%;
+height: 100%;
+margin-right: 3.5%;
+}
+.must_main2{
+  width: 26.2%;
+  height: 100%;
+}
+
+.must_text {
+  color: #8A8894;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  /* font-style: normal; */
+  line-height: 22.4px;
+  display: flex;
+}
+.must_text img {
+  margin-right: 6px;
 }
 .rules {
   width: 100%;
-  height: 8.3%;
-  color: #333333;
-  font-family: "Raleway", sans-serif;
+  height: 9.3%;
+  color: #212121;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
-  font-size: 11.8px;
-  font-style: normal;
-  line-height: 18px;
+  font-size: 16px;
+  /* font-style: normal; */
+  line-height: 22.4px;
 }
 .registr_btn {
-  margin-top: 5.7%;
+  /* margin-top: 5.7%; */
   /* width: 29.4%;
   height: 5.7%; */
-  width: 153px;
-  height: 40px;
-  background-color: #398eb1;
+  width: 216px;
+  height: 56px;
+  background-color: #605DEC;
   color: #ffffff;
-  border-radius: 5px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  font-style: normal;
-  line-height: 18px;
+  border-radius: 4px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  /* font-style: normal; */
+  line-height: 24px;
   border: none;
   cursor: pointer;
- margin-left: 29.6%;
+ margin-left: 68.2%;
 }
-.registration_inner2{
-  width: 32.8%;
-  height: 82.3%;
-  background-color: #ffffff;
-  border-radius: 20px;
+.registration2{
+  margin: 0 auto;
+  /* width: 100%; */
+  width: 996px;
+  height: 1011px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 33px;
+  /* background: linear-gradient(81.3deg, #b3d946 5.44%, #737dd4 98.03%); */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 24.1%;
+  z-index: 1000;
 }
-.registration_inner2_inner{
-  width:90.5%;
-  height: 91.4%;
+.registration_inner2 {
+  width: 88.8%;
+  height: 88.9%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
-
+  align-items: start;
+  justify-content: space-between;
 }
+
 @media (max-width: 1440px) {
   .reg_inner1 {
     font-size: 26px;

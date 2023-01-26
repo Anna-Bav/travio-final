@@ -7,6 +7,8 @@ import {Link} from 'react-router-dom';
 
 export default function Login(props) {
 
+    const {popup ,setPopup ,  setPopupReg,popupReg} = props
+
     const [email, setEmail] = useState()  
     const [password, setPassword] = useState()
     const [emailDirty, setEmailDirty] = useState(false)
@@ -17,6 +19,11 @@ export default function Login(props) {
     const [formValid, setFormValid] = useState(false)
     const dispatch = useDispatch()
 
+
+    function toggleReg(){
+        setPopupReg(!popupReg)
+        setPopup(!popup)
+    }
 
     useEffect( () => {
         if (emailError || passwordError) {
@@ -32,7 +39,7 @@ export default function Login(props) {
             const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         
         if (!re.test(String(e.target.value).toLowerCase())) {
-            setEmailError('Неверный e-mail');
+            setEmailError('Неверный адрес электронной почты');
         } else {
             setEmailError('')
         }
@@ -41,7 +48,7 @@ export default function Login(props) {
         const passwordHandler = (e) => {
             setPassword(e.target.value)
             if(e.target.value.length < 8 || e.target.value.length > 14) {
-                setPasswordError('Пароль должен быть не менее 8 и не более 14 символов')
+                setPasswordError('Неверный пароль')
                 if(!e.target.value) {
                     setPasswordError('Пароль не может быть пустым')
                 }
@@ -66,25 +73,34 @@ export default function Login(props) {
     
    return(
        <div className='login'>
+
+            <div className='login_close' onClick={() => setPopup(!popup)}>
+            <img src='/images/close.svg'/>
+            </div>
+
            <div className='login_inner'>
            {/* <div className='logo'>
                <Link to='/landing'><img src='/images/logo.svg'/></Link>
                </div> */}
             
-               <div className='login_inner1'>
-               <div className='login_title'>Авторизация в TRAV.IO</div>
-               <div className='mail_adress'>Адрес электронной почты</div>
-               <input onChange = {e => emailHandler(e)} value={email} onBlur = {e => blurHandler(e)} className='input_mail' name='email' type='email'/>
-               {(emailDirty && emailError) && <div style={{color:'#EF3125', fontSize:'10px'}}>{emailError}</div>}
+                
+                <div className='login_title'>Войти в Travio</div>
+                
+               
+               {/* <div className='login_inner1'> */}
+               {/* <div className='login_title'>Авторизация в TRAV.IO</div> */}
+               {/* <div className='mail_adress'>Адрес электронной почты</div> */}
+               <input onChange = {e => emailHandler(e)} value={email} onBlur = {e => blurHandler(e)} className='input_mail' name='email' type='email' placeholder='Адрес электронной почты'/>
+               {(emailDirty && emailError) &&  <div style={{color:'#8E8E8E', fontFamily:'Nunito Sans, sans-serif', fontSize:'12px', fontWeight: '400', display: 'flex', justifyContent:'space-between'}}> <img style={{marginRight:'8px'}} src='/images/error.svg'/>{emailError}</div>}
 
-               <div className='mail_adress'>Пароль</div>
-               <input  onChange = {e => passwordHandler(e)} value={password} onBlur = {e => blurHandler(e)}  className='input_password' name='password'  type='password'/>
-               {(passwordDirty && passwordError) && <div style={{color:'#EF3125', fontSize:'10px'}}>{passwordError}</div>}
+               {/* <div className='mail_adress'>Пароль</div> */}
+               <input  onChange = {e => passwordHandler(e)} value={password} onBlur = {e => blurHandler(e)}  className='input_password' name='password'  type='password' placeholder='Пароль'/>
+               {(passwordDirty && passwordError) && <div style={{color:'#8E8E8E', fontFamily:'Nunito Sans, sans-serif', fontSize:'12px', fontWeight: '400', display: 'flex', justifyContent:'space-between'}}> <img style={{marginRight:'8px'}} src='/images/error.svg'/>{passwordError}</div>}
 
 
                <div className='rememberMe'>
                     <div className='remember'><input className='check' type='checkbox'/>Запомнить меня</div>
-                    <div className="forget">Забыли пароль?</div>
+                    <div className="forget">Напомнить пароль</div>
                </div>
 
                {/* {(emailDirty && emailError) && <div style={{color:'#FE1313', fontSize:'12px'}}>{emailError}</div>}
@@ -93,13 +109,21 @@ export default function Login(props) {
                <button disabled={!formValid} onClick={() => dispatch(login(email,password))}  className='login_btn'>Войти</button>
 
 
-
+               <div className='noAccount'>
+                <div className='notYet'>Еще нет аккаунта? </div>
+                <div className='regTravio'>Зарегистрируйтесь в Travio</div>
                </div>
 
+            
+
+
+
+               {/* </div> */}
+{/* 
                <div className='login_inner2'>
                <div className='reg_text'>Еще нет аккаунта? Зарегистрируйтесь в TRAV.IO!</div>
                <button className='reg_button'>Зарегистрироваться</button>
-               </div>
+               </div> */}
 
 
            {/* <div className='login_travio'> */}

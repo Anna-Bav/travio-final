@@ -4,7 +4,12 @@ import {Link} from 'react-router-dom';
 import {FaSearch} from 'react-icons/fa';
 
 
-export default function Header() {
+export default function Header(props) {
+    const {popup, setPopup, popupReg, setPopupReg} = props;
+
+
+
+
     return(
              
          <div className='header'>
@@ -21,8 +26,12 @@ export default function Header() {
                        <div className='input_search'><input type='text' placeholder='Поиск' />  
                        {/* <FaSearch className='imgSearch'/> */}
                        </div>
-                       <Link to='/registration'><button className='reg_btn'>Зарегистрироваться</button></Link>
-                       <Link to='/login'><button className='log_btn'>Войти</button></Link>
+                       {/* <Link to='/registration'> */}
+                        <button className='reg_btn' onClick={() => setPopupReg(!popupReg)}>Зарегистрироваться</button>
+                        {/* </Link> */}
+                       {/* <Link to='/login'> */}
+                        <button className='log_btn' onClick={() => setPopup(!popup)}>Войти</button>
+                        {/* </Link> */}
                        </div>
                    </div>
 

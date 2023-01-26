@@ -113,6 +113,11 @@
   cursor: pointer;
   background-color: #ffffff;
 }
+.reg_btn:hover {
+  background-color: #F6F5FF;
+  color:#605DEC;
+
+}
 .log_btn {
   width: 88px;
   height: 40px;
@@ -128,6 +133,9 @@
   border-radius: 4px;
   cursor: pointer;
  
+}
+.log_btn:hover {
+  background-color: #3D3ACE;
 }
 /* .header_inner1:hover .log_btn {
   background-color: #ffffff;
@@ -252,6 +260,9 @@
   border: 1px solid #605DEC;
   cursor: pointer;
   border-radius: 4px;
+}
+.join:hover {
+  background-color: #3D3ACE;
 }
 .header_img {
   width: 80.7%;

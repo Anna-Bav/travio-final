@@ -7,26 +7,51 @@
 } */
 .login {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  height: 846px;
-  background: linear-gradient(81.3deg, #b3d946 5.44%, #737dd4 98.03%);
-  box-sizing: border-box;
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  /* background-image: url("../../../public/images/background.svg"); */
-}
-.login_inner {
-  width: 27.1%;
-  height: 76.4%;
+  /* width: 100%; */
+  width: 588px;
+  height: 516px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  /* background: linear-gradient(81.3deg, #b3d946 5.44%, #737dd4 98.03%); */
+  margin-top: 286px;
+  /* box-sizing: border-box; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 34.7%;
+  z-index: 1000;
+
+
+  /* width: 377px;
+  height: 505px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 85px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40%;
+  z-index: 1000; */
+  /* background-image: url("../../../public/images/background.svg"); */
+}
+.login_close{
+  width: 94.6%;
+  display:flex;
+  justify-content: end;
+  cursor: pointer;
+}
+.login_inner {
+  width: 81.0%;
+  height: 78.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   justify-content: space-between;
 }
-.login_inner1 {
+/* .login_inner1 {
   width: 100%;
   height: 61.6%;
   background-color: #ffffff;
@@ -36,41 +61,42 @@
   justify-content: space-around;
   border-radius: 20px;
   /* padding-top: 10px;
-  padding-bottom: 10px; */
-}
+  padding-bottom: 10px; 
+} */
 .login_title {
-  color: #333333;
-  font-family: "Raleway", sans-serif;
+  color: #212121;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
-  font-size: 31px;
-  font-style: normal;
-  line-height: 36.39px;
-  margin-top: 3.7%;
+  font-size: 32px;
+  /* font-style: normal; */
+  line-height: 38.4px;
+  /* margin-top: 3.7%; */
 }
-.mail_adress {
+/* .mail_adress {
   color: #a8a8a8;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 12px;
   font-style: normal;
   line-height: 14.09px;
-  /* display: flex;
-  justify-content: start;
-  align-items: start; */
-}
+} */
 .input_mail,
 .input_password {
-  width: 88.5%;
+  width: 100%;
+  height: 13.9%;
   border: none;
-  border-bottom: 1px solid #a8a8a8;
-  color: #333333;
-  font-family: "Raleway", sans-serif;
+  border-radius: 4px;
+  padding-left: 4.2%;
+  /* border-bottom: 1px solid #a8a8a8; */
+  color: #8A8894;
+  background-color: #F7F7FD;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  font-style: normal;
-  line-height: 17.61px;
+  font-size: 16px;
+  /* font-style: normal; */
+  line-height: 24px;
 }
-.input_mail:focus,
+/* .input_mail:focus,
 .input_password:focus {
   outline: 0;
   outline-offset: 0;
@@ -81,50 +107,85 @@
   font-style: normal;
   line-height: 17.61px;
   border-bottom: 2px solid #398eb1;
-}
+} */
 .rememberMe {
-  width: 88.5%;
+  width: 100%;
+  height: 5.9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.check{
+  width: 24px;
+  height:24px;
+
+}
 .remember {
   /* width:50%; */
-  color: #a8a8a8;
-  font-family: "Raleway", sans-serif;
+  width:33.2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #BDBACE;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  font-style: normal;
-  line-height: 17.61px;
+  font-size: 16px;
+  /* font-style: normal; */
+  line-height: 24px;
 }
 /* .check{
   
 } */
 .forget {
   /* width:50%; */
-  color: #398eb1;
-  font-family: "Raleway", sans-serif;
+  color: #605DEC;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  font-style: normal;
-  line-height: 17.61px;
+  font-size: 16px;
+  /* font-style: normal; */
+  line-height: 20px;
+  cursor: pointer;
 }
 .login_btn {
-  width: 20.2%;
-  height: 10.1%;
-  background-color: #398eb1;
-  border-radius: 5px;
+  width: 100%;
+  height: 13.9%;
+  background-color: #605DEC;
+  border-radius: 4px;
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  font-style: normal;
-  line-height: 18px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  /* font-style: normal; */
+  line-height: 24px;
   border: none;
   cursor: pointer;
-  margin-bottom: 3.7%;
+  /* margin-bottom: 3.7%; */
 }
-.login_inner2 {
+.noAccount{
+  width: 100%;
+  height: 5.4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notYet{
+  color: #212121;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  cursor: pointer;
+
+}
+.regTravio{
+  color: #605DEC;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  cursor: pointer;
+}
+/* .login_inner2 {
   width: 100%;
   height: 33.7%;
   background-color: #ffffff;
@@ -133,8 +194,8 @@
   align-items: center;
   justify-content: space-around;
   border-radius: 20px;
-}
-.reg_text {
+} */
+/* .reg_text {
   width: 89.5%;
   color: #333333;
   font-family: "Raleway", sans-serif;
@@ -143,8 +204,8 @@
   font-style: normal;
   line-height: 37px;
   text-align: center;
-}
-.reg_button {
+} */
+/* .reg_button {
   width: 46.7%;
   height: 24.8%;
   border-radius: 5px;
@@ -157,7 +218,7 @@
   line-height: 21.6px;
   border: none;
   cursor: pointer;
-}
+} */
 /* .logo {
   width: 100%;
   margin-top: 2.57%;
